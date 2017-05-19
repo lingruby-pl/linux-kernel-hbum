@@ -1,0 +1,54 @@
+pkgbase = linux-hbum-git
+	pkgver = 4.11.1.r114.gc140f5e9d15b
+	pkgrel = 1
+	url = http://algo.ing.unimo.it
+	arch = x86_64
+	license = GPL2
+	makedepends = kmod
+	makedepends = inetutils
+	makedepends = bc
+	makedepends = libelf
+	options = !strip
+	source = git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable-rc.git#branch=linux-4.11.y
+	source = http://algo.ing.unimo.it/people/paolo/disk_sched/patches/4.11.0-v8r11/0001-block-cgroups-kconfig-build-bits-for-BFQ-v7r11-4.11..patch
+	source = http://algo.ing.unimo.it/people/paolo/disk_sched/patches/4.11.0-v8r11/0002-block-introduce-the-BFQ-v7r11-I-O-sched-for-4.11.0.patch
+	source = http://algo.ing.unimo.it/people/paolo/disk_sched/patches/4.11.0-v8r11/0003-block-bfq-add-Early-Queue-Merge-EQM-to-BFQ-v7r11-for.patch
+	source = http://algo.ing.unimo.it/people/paolo/disk_sched/patches/4.11.0-v8r11/0004-blk-bfq-turn-BFQ-v7r11-for-4.11.0-into-BFQ-v8r11-for.patch
+	source = http://repo-ck.com/source/gcc_patch/enable_additional_cpu_optimizations_for_gcc_v4.9+_kernel_v3.15+.patch.gz
+	source = config.x86_64
+	source = 90-linux.hook
+	source = linux.preset
+	source = http://kerneldedup.org/download/uksm/0.1.2.6/uksm-0.1.2.6-for-v4.11.patch
+	source = http://ck.kolivas.org/patches/muqss/4.0/4.11/4.11-sched-MuQSS_155.patch
+	sha512sums = SKIP
+	sha512sums = c811d43f4e03c725ac03707f8f662f85670d1083db61c23104777c2998d9cf4d557b68b18b38e550ef5e3a06f2179ed960476fa7d3f09cb804ebb99d6e478e76
+	sha512sums = e79d8d3302eb675e6becb21463b72e4fd11a0bae4bafc6f7eb963459b594a17be0fe20df76af846c763939ce5ede40f7cd2e536af5b8e77d3015925d797dcaec
+	sha512sums = be1b94ac52ed519243aa1889bd392dd1e68ec0a2fdae4bf5d2c9fa62a33cad94f1ff6db26e66cd4de60a4e07ab7d2cbad6b3f9a625ddeb909702f5bf39a2368a
+	sha512sums = cd82bce44c7d5a8148e69ae8bab3ea10df1b65bb97a6494c0c0ffe0e5b6f7e6eb08d8c2c3597e31e3d88ba908d36ab749fc97aaccf51857bbd29a697395789c9
+	sha512sums = 77d80d50d8c4323ed36fd2097ba9f6b49bb8d7cae59d32ffa76b309758a7e9f972d26fedd77046d88ce2691bb01a07909f8bdc34ba214414be3bc030ee31994d
+	sha512sums = b1ee910098a7609968893a22a8040b676a8e47fd3d86bec6d1eebc3b57e22e4cdf234c650ac70bbee225e10363236feddb663d6f36ad81379fc5074683523a62
+	sha512sums = d6faa67f3ef40052152254ae43fee031365d0b1524aa0718b659eb75afc21a3f79ea8d62d66ea311a800109bed545bc8f79e8752319cd378eef2cbd3a09aba22
+	sha512sums = 2dc6b0ba8f7dbf19d2446c5c5f1823587de89f4e28e9595937dd51a87755099656f2acec50e3e2546ea633ad1bfd1c722e0c2b91eef1d609103d8abdc0a7cbaf
+	sha512sums = 6a4fc7d521e1e64df9fe94fabb0d7aff7dcd0199fce22cb30b56113a42b4edea02428128c16e408f3d316f922bd3e95dc51e96fba6eb6eff49bf164086b71faf
+	sha512sums = a1983c2bff1462b499f8bbdcd140816bad68692b89d3aeb651ffd076a42a58a7299073a7df70e1bf4242dfe1935935492b0b74e9612b8c6c57b249d5d9b42746
+
+pkgname = linux-hbum-git-kernel
+	pkgdesc = Linux Kernel and modules with the BFQ scheduler. Fourth Gen Intel Core i3/i5/i7 optimized.
+	install = linux.install
+	groups = linux-hbum-git
+	depends = coreutils
+	depends = linux-firmware
+	depends = mkinitcpio>=0.7
+	optdepends = crda: to set the correct wireless channels of your country
+	optdepends = modprobed-db: Keeps track of EVERY kernel module that has ever been probed - useful for those of us who make localmodconfig
+	backup = etc/mkinitcpio.d/linux-hbum-git.preset
+
+pkgname = linux-hbum-git-headers
+	pkgdesc = Header files and scripts to build modules for linux-hbum-git. Fourth Gen Intel Core i3/i5/i7 optimized.
+	groups = linux-hbum-git
+	depends = linux-hbum-git-kernel
+
+pkgname = linux-hbum-git-docs
+	pkgdesc = Kernel hackers manual - HTML documentation that comes with the linux-hbum-git kernel. Fourth Gen Intel Core i3/i5/i7 optimized.
+	groups = linux-hbum-git
+	depends = linux-hbum-git-kernel
