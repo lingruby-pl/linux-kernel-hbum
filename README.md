@@ -1,5 +1,5 @@
 # My kernel
 
-linux-hbumb-git
+linux-hbum-git
 
 hbum = haswell-bfq-uksm-muqss
