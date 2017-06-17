@@ -65,7 +65,7 @@ _CFQ_disable=y
 pkgbase=linux-hbum-git
 # pkgname=('linux-hbum-git-kernel' 'linux-hbum-git-headers' 'linux-hbum-git-docs')
 _srcname=linux-stable-rc
-pkgver=4.11.5.r14.g191219b9b10e
+pkgver=4.11.6.r0.gabb04342fcae
 pkgrel=1
 arch=('x86_64')
 url="http://algo.ing.unimo.it"
@@ -488,7 +488,7 @@ sha512sums=('SKIP'
             'be1b94ac52ed519243aa1889bd392dd1e68ec0a2fdae4bf5d2c9fa62a33cad94f1ff6db26e66cd4de60a4e07ab7d2cbad6b3f9a625ddeb909702f5bf39a2368a'
             'cd82bce44c7d5a8148e69ae8bab3ea10df1b65bb97a6494c0c0ffe0e5b6f7e6eb08d8c2c3597e31e3d88ba908d36ab749fc97aaccf51857bbd29a697395789c9'
             '77d80d50d8c4323ed36fd2097ba9f6b49bb8d7cae59d32ffa76b309758a7e9f972d26fedd77046d88ce2691bb01a07909f8bdc34ba214414be3bc030ee31994d'
-            'ab1b192a37a3ab9a1dd74bf7b5bc5cbb5d2a82fd329e604f5c6cba10a1a17f3b0227c639f03b7faf2f3903d607316787dfdc579f656e4f6832d13a442d8279ab'
+            '07e569c478f1f796a40f7c2e76f9d4dcf3bded0846f823cf755526856092c3e43234fe80d00c288e5bd34ddd7324e2fc5ded0673b3cd179a410dc6b8dfdc820e'
             'd6faa67f3ef40052152254ae43fee031365d0b1524aa0718b659eb75afc21a3f79ea8d62d66ea311a800109bed545bc8f79e8752319cd378eef2cbd3a09aba22'
             '2dc6b0ba8f7dbf19d2446c5c5f1823587de89f4e28e9595937dd51a87755099656f2acec50e3e2546ea633ad1bfd1c722e0c2b91eef1d609103d8abdc0a7cbaf'
             '0ce0056dc94aea13c57bf2290de9efe3339ed972ad261b9623833354be0e8cde765af0f0c45be40a4f00737bda4cec940f3e51e1d74e9a786532631f3f6ae6b1'
